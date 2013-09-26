@@ -1,0 +1,62 @@
+div.navbar-header{
+	background-color: #222222;
+	border-color: #080808;
+	color: #999;
+	padding:10px;
+	width:100%;
+}
+
+div.table-container{
+	min-height: 668px;
+}
+
+th{
+	text-align:center;		
+}
+
+td div{
+	margin-top:8px;
+}
+
+td a{
+	line-height:1.5;
+	font-size:14px;
+	letter-spacing:2px;
+	padding-right:15px;
+	display:inline-block;
+	text-decoration:underline;
+}
+
+	td a span{
+		  font-size:12px;
+	}
+	
+	
+td a:hover{
+	color: #333;
+}
+	
+
+td input[type=checkbox]{
+  margin-top:10px;
+  margin-left:5px;
+}
+
+
+p.count-contacts{
+	line-height:2;
+	margin:10px 0 5px 0;
+}
+
+p.empty{
+	padding:10px;
+}
+
+div.footer{
+	background-color: #222222;
+	border-color: #080808;
+	color: #999;
+	padding:10px;
+	width:100%;
+}
+

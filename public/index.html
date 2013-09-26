@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Sample Marionette-Backbone.js App with Node.js, Express and Mongoose</title>
+<link rel="stylesheet" href="/css/bootstrap.css"> 
+<link rel="stylesheet" href="/css/style.css"> 
+</head>
+<body>
+	<div class="container">
+		<div class="navbar-header">
+			<h4>Manage Contacts</4>
+		</div>
+	</div>
+	<div class="container">
+		<div class="table-container" id="main-contacts-container">
+			<p class="count-contacts">No.of Contacts:<b> <span class="count">0</span> </b></p>
+			<table class="table table-hover" id="contacts-container">
+				<thead class="btn-primary">
+					<tr>
+						<th>No.</th>
+						<th>Username</th>
+						<th>Contact no.</th>
+						<th>Email Address</th>
+						<th> 
+							&nbsp;
+						</th>
+					</tr>	
+				</thead>
+				<tbody>
+					<tr id="add-contacts-container">
+						<td>#</td>
+						<td><input type="text" name="username"  class="form-control"  placeholder="Username" autocomplete="off" required></td>
+						<td><input type="text" name="contact"  class="form-control"  placeholder="Contact no." autocomplete="off" required></td>
+						<td><input type="text" name="email"  class="form-control"  placeholder="Email Address" autocomplete="off" required></td>
+						<td>
+							<div>
+								<a href="" title="save" class="add"><i class="glyphicon glyphicon-plus-sign"></i></a>
+							</div>	
+						</td>
+					</tr>
+				</tbody>	
+			</table>
+		</div>	
+	</div>
+	<div class="container">
+		<div class="footer">
+			<p>Backbone.js + Marionette.js +  Node.js(express) + Mongoose</p>
+		</div>
+	</div>
+	
+<script id="contactsTemplate" type="text/template">
+	<td><%= position %></td>
+	<td><input type="text" name="username"  value="<%= username %>" class="form-control"  placeholder="Username" autocomplete="off" required disabled ></td>
+	<td><input type="text" name="contact"  value="<%= contact %>" class="form-control"  placeholder="Contact no." autocomplete="off" required disabled></td>
+	<td><input type="text" name="email"  value="<%= email %>"  class="form-control"  placeholder="Email Address" autocomplete="off" required disabled></td>
+	<td>
+		<div>
+			<a href="javascript:void(0);"  title="Edit" class="edit"><i class="glyphicon glyphicon-pencil"></i></a> 
+			<a href="#contacts/<%= _id %>"  title="Update" class="update" style="display:none;"><i class="glyphicon glyphicon-download"></i></a> 
+			<a href="javascript:void(0);"  title="Cancel" class="cancel" style="display:none;"><i class="glyphicon glyphicon-remove"></i></a> 
+			<a href="#contacts/<%= _id %>"  title="Delete" class="delete"><i class="glyphicon glyphicon-trash"></i></a> 
+		</div>	
+	</td>
+</script>	
+
+<script id="contactsEmptyTemplate" type="text/template">
+    <p class="empty" >No Contacts.....</p>
+</script> 
+<script type="text/javascript" src="/js/jquery1x.js"> </script>
+<script type="text/javascript" src="/js/modernizr.js"> </script>
+<script type="text/javascript" src="/js/underscore-min.js"> </script>
+<script type="text/javascript" src="/js/backbone-min.js"> </script>
+<script type="text/javascript" src="/js/backbone.marionette-min.js"> </script>
+<script type="text/javascript"src="js/app.js"></script>	
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "backbone",
+  "version": "0.0.0",
+  "description": "sample backbone application with node.js and mongoose",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~3.4.0",
+    "ejs": "~0.8.4",
+    "underscore": "~1.5.2",
+    "mongoose": "~3.6.19"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "backbone",
+    "node.js",
+    "mongoose"
+  ],
+  "author": "Ronald Gemao",
+  "license": "BSD-2-Clause"
+}
